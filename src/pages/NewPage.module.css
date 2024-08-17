@@ -1,0 +1,46 @@
+.groupIcon {
+  width: 190.7px;
+  height: 205.3px;
+  position: relative;
+  object-fit: cover;
+}
+.contactForm,
+.newPage {
+  background-color: var(--color-firebrick);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.contactForm {
+  align-self: stretch;
+  overflow: hidden;
+  padding: 64px var(--padding-xl);
+  gap: 64px;
+  max-width: 100%;
+}
+.newPage {
+  width: 100%;
+  position: relative;
+  padding: 0 0 193.7px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .contactForm {
+    padding-top: var(--padding-23xl);
+    padding-bottom: var(--padding-23xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 675px) {
+  .contactForm {
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contactForm {
+    gap: var(--gap-base);
+  }
+}
